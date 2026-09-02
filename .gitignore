@@ -1,9 +1,9 @@
 # data
-data/raw/*
-data/interim/*
-data/processed/*
-!data/**/.gitkeep
+# Data
+data/**
+!data/**/
 !data/**/README.md
+!data/**/.gitkeep
 
 # Notebook
 .ipynb_checkpoints/
@@ -17,3 +17,7 @@ venv/
 
 # OS
 .DS_Store
+
+# PyCharm
+.idea/
+*.iml
