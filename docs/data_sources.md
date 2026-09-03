@@ -29,6 +29,7 @@ revenue projections.
 | Local path | `data/raw/fed_scenarios/` |
 
 Source: https://www.federalreserve.gov/publications/files/2026-final-supervisory-stress-test-scenarios-20260204.pdf
+(Retrieved on 09/02/2026)
 
 Notes: The Board finalized the 2026 scenarios on February 4, 2026, and at the
 same time voted to maintain existing stress test capital requirements pending
@@ -41,13 +42,18 @@ consideration of public feedback on proposed changes to the framework.
 **Purpose:** Provides the starting balance sheet, capital position, and the
 historical panel used to estimate loss and revenue models.
 
-| Field | Value |
-|---|---|
+| Field | Value                                                                |
+|---|----------------------------------------------------------------------|
 | Publisher | Federal Financial Institutions Examination Council / Federal Reserve |
-| Report form | FR Y-9C, Consolidated Financial Statements for Holding Companies |
-| Institution | M&T Bank Corporation |
-| RSSD ID | To be confirmed |
-| Starting balance sheet | 2025 Q4 |
-| Historical panel | To be determined |
-| Retrieved | Not yet retrieved |
+| Report form | FR Y-9C, Consolidated Financial Statements for Holding Companies     |
+| Institution | M&T Bank Corporation                                                 |
+| RSSD ID | 1037003 |                                                             |
+| Starting balance sheet | 2025 Q4                                                              |
+| Historical panel | To be determined                                                     |
+| Retrieved | Not yet retrieved                                                    |
 | Local
+
+The RSSD ID identifies M&T Bank Corporation, the top-tier holding company and
+the entity named in the Federal Reserve's stress test disclosure. Its bank
+subsidiary, Manufacturers and Traders Trust Company, files separate Call
+Reports and is not the reporting entity for this project.
