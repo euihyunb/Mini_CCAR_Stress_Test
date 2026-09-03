@@ -40,3 +40,14 @@ The following components of the supervisory stress test are not modeled.
 
 The first two exclusions are properties of the institution rather than
 simplifications. The third is a simplification.
+
+## L-004. Portability to Other Institutions
+
+The consumer segment definition in A-010 is appropriate for M&T, where
+automobile lending is 3.7 percent of total loans. Applying the same definition
+to an institution with material automobile exposure would blend two portfolios
+with different loss severities and understate the precision of the projection.
+
+For such an institution the estimation would need to draw on a cross-bank panel
+for the pre-2011 period, using automobile loss sensitivity estimated from banks
+with material exposure rather than from the institution's own history.

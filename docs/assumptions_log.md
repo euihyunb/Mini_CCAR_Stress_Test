@@ -189,3 +189,50 @@ scale in a severe downturn. The direction of the net bias is not determinable
 from available data.
 
 **Effect.** Loss model specification. Recorded in the limitations write-up.
+
+---
+
+## A-010. Consumer Segment Definition
+
+**Assumption.** Consumer lending is modeled as two segments: credit cards, and
+all other consumer loans. Automobile lending is not separated.
+
+**Basis.** FR Y-9C began collecting separate automobile and other consumer loan
+items in 2011. The estimation sample begins in 2005, so these items are
+unavailable for the first six years, which include the 2007-09 recession. That
+period is the most informative part of the sample for loss estimation and
+cannot be dropped.
+
+Other consumer loans are derived as total loans to individuals less credit
+cards, which is available across the full sample. The same derivation is
+applied to every quarter rather than switching definitions in 2011, so the
+series is internally consistent.
+
+**Effect.** Segment definitions in the estimation panel. As of 2025 Q4 the
+combined other consumer segment is 20.0 billion, of which automobile lending is
+5.2 billion.
+
+**Residual risk.** Automobile and unsecured consumer lending have different loss
+severities. Combining them yields a blended sensitivity that will understate
+losses if the mix has shifted toward unsecured lending, and overstate them if
+it has shifted toward secured. The mix is examined where the underlying items
+are available from 2011 onward.
+
+---
+
+## A-011. Capital Items Sourced from The Anchor Filing Only
+
+**Assumption.** CET1 capital and risk-weighted assets are taken from the 2025 Q4
+filing. No historical series is constructed for these items.
+
+**Basis.** The Basel III capital framework was phased into FR Y-9C reporting
+during 2014 and 2015. CET1 items are not present in earlier filings, which
+instead reported tier 1 common capital on a different basis.
+
+No historical series is required. The capital walk starts from the reported
+2025 Q4 position and is projected forward using modeled losses and revenue.
+Historical capital ratios are not inputs to the projection.
+
+**Effect.** The estimation panel covers loan balances, charge-offs, recoveries,
+and income statement items. Capital items are read separately from the anchor
+filing.
