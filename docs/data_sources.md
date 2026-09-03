@@ -13,7 +13,7 @@ exercise. Results are released in June. This project uses the February
 scenario file as input and the June results file as the benchmark.
 ---
 
-## 1. Supervisory scenario
+## 1. Supervisory Scenario
 
 **Purpose:** Provides the nine-quarter macroeconomic paths that drive loss and
 revenue projections.
@@ -37,7 +37,7 @@ consideration of public feedback on proposed changes to the framework.
 
 ---
 
-## 2. Bank regulatory filings
+## 2. Bank Regulatory Filings
 
 **Purpose:** Provides the starting balance sheet, capital position, and the
 historical panel used to estimate loss and revenue models.
@@ -47,9 +47,10 @@ historical panel used to estimate loss and revenue models.
 | Publisher | Federal Financial Institutions Examination Council / Federal Reserve |
 | Report form | FR Y-9C, Consolidated Financial Statements for Holding Companies     |
 | Institution | M&T Bank Corporation                                                 |
-| RSSD ID | 1037003 |                                                             |
-| Starting balance sheet | 2025 Q4                                                              |
-| Historical panel | To be determined                                                     |
+| RSSD ID | 1037003 |
+| Starting balance sheet | 2025 Q4, retrieved 2026-09-02 |
+| File retrieved | `FRY9C_1037003_20251231.csv` |
+| Historical panel | 2005 Q1 to 2025 Q4, not yet retrieved |                                                   |
 | Retrieved | Not yet retrieved                                                    |
 | Local
 
@@ -57,3 +58,12 @@ The RSSD ID identifies M&T Bank Corporation, the top-tier holding company and
 the entity named in the Federal Reserve's stress test disclosure. Its bank
 subsidiary, Manufacturers and Traders Trust Company, files separate Call
 Reports and is not the reporting entity for this project.
+
+FR Y-9C data is retrieved from two sources. The Federal Reserve Bank of
+Chicago hosts filings through 2021 Q1. Effective June 2021, filings within the
+active revision window moved to the National Information Center's Financial
+Data Download. Coverage is contiguous: Chicago through 2021 Q1, NIC from
+2021 Q2.
+
+The two sources are checked for consistency at the boundary before the panel is
+assembled.

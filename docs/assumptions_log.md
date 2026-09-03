@@ -119,3 +119,73 @@ the acquisition is examined in the segmentation stage, and any material shift
 is recorded as a limitation.
 
 **Effect.** Loss model specification and the scope of the limitations write-up.
+
+---
+
+## A-007. Year-to-date reporting on income statement items
+
+**Assumption.** Income statement and charge-off items are converted from
+calendar year-to-date to quarterly values by differencing consecutive filings
+within each calendar year. First quarter values are used as reported.
+
+**Basis.** FR Y-9C reports income statement items, charge-offs, and recoveries
+on a calendar year-to-date basis. The 2025 Q4 filing reports net interest
+income of 6.9 billion, which is full-year 2025 rather than fourth quarter
+activity. Using year-to-date values directly would overstate quarterly flows by
+up to a factor of four and produce loss rates inconsistent with the quarterly
+scenario horizon.
+
+**Effect.** Applied when constructing the estimation panel in notebook 03.
+Balance sheet items are point-in-time and are not differenced.
+
+**Control.** Quarterly values are checked for negatives. A negative quarterly
+charge-off after differencing indicates either a restatement between filings or
+an error in the differencing logic, and is investigated rather than passed
+through.
+
+---
+
+## A-008. Charge-offs as the loss measure
+
+**Assumption.** Credit losses are modeled using net charge-offs rather than
+provisions for credit losses.
+
+**Basis.** The adoption of CECL in 2020 changed the basis on which provisions
+are determined, from incurred loss to expected lifetime loss. Provisions are
+therefore not comparable across the estimation sample. Charge-off definitions
+were not materially affected by the change.
+
+**Effect.** Net charge-offs, defined as charge-offs less recoveries, are the
+dependent variable in the loss models.
+
+**Residual risk.** The capital walk requires a provision expense, not a
+charge-off. Over the nine-quarter horizon the two converge, since provisions
+ultimately fund charge-offs, but they differ within individual quarters. The
+projection therefore treats projected net charge-offs as the provision expense.
+This approximation is examined in the sensitivity analysis.
+
+---
+
+## A-009. Nondepository financial institution exposure
+
+**Assumption.** Loans to nondepository financial institutions are modeled as a
+separate segment, with loss sensitivity estimated from the commercial and
+industrial portfolio.
+
+**Basis.** This segment represents 12.5 billion, or approximately 9 percent of
+total loans, and is material. It has no usable loss history: the item was not
+separately reported for most of the estimation sample, and the exposure itself
+expanded after the 2007-09 recession. Direct estimation is not possible.
+
+Lending to private credit funds, nonbank mortgage originators, and specialty
+finance companies is secured against pools of underlying corporate or consumer
+credit. Corporate credit performance is the closest observable proxy.
+
+**Residual risk.** The proxy understates two features of the exposure. Facility
+structures are typically overcollateralized, which reduces loss severity
+relative to direct corporate lending. Against this, the exposure is
+concentrated, correlated with the same underlying credit cycle, and untested at
+scale in a severe downturn. The direction of the net bias is not determinable
+from available data.
+
+**Effect.** Loss model specification. Recorded in the limitations write-up.
